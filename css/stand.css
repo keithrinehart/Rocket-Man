@@ -1317,7 +1317,7 @@
   border: 1px solid #b288c0;
 }
 
-@media only screen and (max-width: 3445px) and (min-width: 2482px) {
+@media (max-width: 3445px) and (min-width: 2482px) {
   .rocket-h3 {
     position: relative;
     top: -140px;
