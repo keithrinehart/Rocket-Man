@@ -1278,6 +1278,17 @@
   }
 }
 
+.after-h3 {
+  position: absolute;
+  top: -60px;
+  left: 180px;
+  color: #b288c0;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 10px;
+  font-weight: 900;
+  z-index: 106;
+}
+
 #rocketVidContainer {
   position: relative;
   display: flex;
@@ -1301,10 +1312,10 @@
 
 .rocket-h3 {
   position: relative;
-  color: ivory;
+  color: #b288c0;
   font-family: "Orbitron", sans-serif;
-  letter-spacing: 5px;
-  font-weight: 100;
+  letter-spacing: 10px;
+  font-weight: 900;
   padding-right: 20px;
   z-index: 106;
 }
@@ -1319,14 +1330,23 @@
 
 @media (max-width: 3445px) and (min-width: 2482px) {
   .rocket-h3 {
-    position: relative;
     top: -140px;
-    color: ivory;
-    font-family: "Orbitron", sans-serif;
+    color: #b288c0;
     letter-spacing: 5px;
     font-size: 50px;
     font-weight: 100;
     padding-right: 20px;
+  }
+
+  .after-h3 {
+    position: absolute;
+    top: -110px;
+    left: 180px;
+    color: #b288c0;
+    font-size: 50px;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 10px;
+    font-weight: 100;
     z-index: 106;
   }
 
