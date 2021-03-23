@@ -1,6 +1,6 @@
 // DOM Elements
 const rocketBtn = document.getElementById("launch-btn");
-
+const videoPlayer = document.getElementById("rocketVid");
 // Function
 let launch = function () {
   rocket.style.animation = "takeoff 30s linear 9s forwards, none";
@@ -50,7 +50,34 @@ let launch = function () {
   firecloud3.style.animation =
     "cloud2 1s linear 8s forwards, shake13 800ms linear infinite";
   firel.style.animation = "flame 1s linear 8s forwards, none";
+  rocketVidContainer.style.animation = "rocketvid 30s linear 9s forwards, none";
 };
 
-// Event Listeners
+let grow = function () {
+  rocketVid.style.width = "1000px";
+  rocketVid.style.transition = "0.3s";
+  rocketVid.style.top = "-500px";
+  rocketMan.style.background = "#000";
+  rocketMan.style.transition = "0.3s";
+  introContainer.style.background = "#000";
+  introContainer.style.transition = "0.3s";
+  introp.style.color = "rgba(255, 255, 240, 0)";
+};
+
+let sizeNormal = function () {
+  rocketVid.style.width = "400px";
+  rocketVid.style.transition = "0.3s";
+  rocketVid.style.top = "-0px";
+  rocketMan.style.background = "rgb(20, 19, 19)";
+  rocketMan.style.transition = "0.3s";
+  introContainer.style.background = "rgb(19, 18, 18)";
+  introContainer.style.transition = "0.3s";
+  introp.style.color = "ivory";
+  introp.style.transition = "0.3s";
+};
+
+// Rocket BTN Event Listeners
 rocketBtn.addEventListener("click", launch);
+// Video in Header
+videoPlayer.addEventListener("click", grow);
+videoPlayer.addEventListener("dblclick", sizeNormal);

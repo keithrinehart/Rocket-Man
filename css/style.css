@@ -8,7 +8,7 @@ body {
   width: 100%;
 }
 
-.rocket-man {
+#rocketMan {
   background: rgb(20, 19, 19);
   height: 100vh;
   overflow: hidden;
@@ -40,25 +40,25 @@ p {
   position: absolute;
   justify-content: center;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 250px;
   width: 700px;
 }
 
-a {
-  position: absolute;
+#launch-btn {
+  position: relative;
   padding: 15px 30px;
   color: rgb(224, 224, 215);
   text-transform: uppercase;
   letter-spacing: 8px;
   font-size: 25px;
   font-family: "Orbitron", sans-serif;
-  z-index: 1;
+  z-index: 105;
 }
-a:hover {
+#launch-btn:hover {
   background: #b288c0;
   color: #fff;
   box-shadow: 0 0 10px #f1e3f3, 0 0 40px #f1e3f3, 0 0 80px #f1e3f3;
-  transition: 0.8s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -67,14 +67,14 @@ a:hover {
 /***********INTRO*************/
 /***********INTRO*************/
 /***********INTRO*************/
-.intro-container {
+#introContainer {
   position: absolute;
   display: flex;
   justify-content: flex-end;
   width: 100%;
   margin: 0 auto;
   padding: 0 50px 0 50px;
-  top: 150px;
+  top: 170px;
   background: rgb(19, 18, 18);
   border-top: 1px solid #b288c0;
   border-bottom: 1px solid #b288c0;
@@ -85,7 +85,9 @@ a:hover {
   align-self: center;
   font-size: 55px;
   font-family: "Orbitron", sans-serif;
-  color: ivory;
+  color: #b288c0;
+  text-shadow: 0 0 1px #bda0c7, 0 0 2px #bda0c7, 0 0 3px #bda0c7,
+    0 0 4px #bda0c7, 0 0 90px #f319bd, 0 0 100px #bda0c7;
   letter-spacing: 10px;
   font-weight: 600;
   margin: 0 300px 0 0;
@@ -136,6 +138,7 @@ a:hover {
   font-weight: 400;
   font-family: "Orbitron", sans-serif;
   top: -100px;
+  z-index: 104;
 }
 
 /****************STAR-SECTION***********/
@@ -851,6 +854,329 @@ a:hover {
   border-radius: 0px 0px 100px 100px;
 }
 
+/******************3445px WIDTH*****************/
+@media (max-width: 3445px) and (min-width: 2482px) {
+  .blog-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+  }
+
+  .blog-header {
+    width: 100%;
+    font-size: 100px;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    color: rgb(224, 224, 215);
+    margin: 0 auto;
+    position: absolute;
+  }
+
+  p {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin-top: 250px;
+    width: 900px;
+  }
+
+  #launch-btn {
+    position: relative;
+    padding: 15px 30px;
+    top: 200px;
+    color: rgb(224, 224, 215);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 35px;
+    font-family: "Orbitron", sans-serif;
+    z-index: 105;
+  }
+  #launch-btn:hover {
+    background: #b288c0;
+    color: #fff;
+    box-shadow: 0 0 10px #f1e3f3, 0 0 40px #f1e3f3, 0 0 80px #f1e3f3;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  /***********INTRO*************/
+  /***********INTRO*************/
+  /***********INTRO*************/
+  /***********INTRO*************/
+  /***********INTRO*************/
+  #introContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px 0 50px;
+    top: 450px;
+    background: rgb(19, 18, 18);
+    border-top: 1px solid #b288c0;
+    border-bottom: 1px solid #b288c0;
+  }
+
+  .rocker-man-header {
+    position: relative;
+    align-self: center;
+    font-size: 80px;
+    font-family: "Orbitron", sans-serif;
+    color: #b288c0;
+    text-shadow: 0 0 1px #bda0c7, 0 0 2px #bda0c7, 0 0 3px #bda0c7,
+      0 0 4px #bda0c7, 0 0 90px #f319bd, 0 0 100px #bda0c7;
+    letter-spacing: 10px;
+    font-weight: 600;
+    flex: 1;
+  }
+
+  #introp {
+    position: relative;
+    color: ivory;
+    font-size: 20px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-weight: 400;
+    font-family: "Orbitron", sans-serif;
+    z-index: 104;
+    left: -250px;
+    flex: 1;
+  }
+
+  /****************STAR-SECTION***********/
+  /****************STAR-SECTION***********/
+  /****************STAR-SECTION***********/
+  /****************STAR-SECTION***********/
+  /****************STAR-SECTION***********/
+  /****************STAR-SECTION***********/
+  #background {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .star1 {
+    position: absolute;
+    background-color: #fff;
+    left: 500px;
+    top: 100px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    animation-name: twinkle1;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+  }
+  .star2 {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation-name: twinkle2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes twinkle1 {
+    30% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+  @keyframes twinkle2 {
+    30% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+  .star3 {
+    position: absolute;
+    left: 1000px;
+    top: 300px;
+    width: 3px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation-name: twinkle3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 105;
+  }
+  @keyframes twinkle3 {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.1;
+    }
+  }
+  .star4 {
+    position: absolute;
+    left: 1500px;
+    top: 120px;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation-name: twinkle4;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes twinkle4 {
+    10% {
+      transform: scale(0.5);
+      opacity: 0.1;
+    }
+  }
+  .star5 {
+    position: absolute;
+    left: 100px;
+    top: 180px;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation-name: twinkle5;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes twinkle5 {
+    20% {
+      tranform: scale(0.5);
+      opacity: 0.1;
+    }
+  }
+  .star6 {
+    position: absolute;
+    left: 800px;
+    top: 90px;
+    width: 3px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation-name: twinkle6;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes twinkle6 {
+    30% {
+      opacity: 0.1;
+    }
+  }
+  .star7 {
+    position: absolute;
+    left: 200px;
+    top: 60px;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation-name: twinkle7;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes twinkle7 {
+    30% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+  .star8 {
+    position: absolute;
+    left: 1200px;
+    top: 5px;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation-name: twinkle8;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes twinkle8 {
+    30% {
+      transform: scale(0.2);
+      opacity: 0.1;
+    }
+  }
+  .star9 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: shooting-star 6s linear 1s infinite forwards;
+  }
+  @keyframes shooting-star {
+    0% {
+      left: 11px;
+      top: 167px;
+    }
+    50% {
+      left: 750px;
+      top: 95px;
+      opacity: 0.1;
+    }
+    100% {
+      left: 1200px;
+      top: 83px;
+      opacity: 0.1;
+    }
+  }
+
+  @keyframes biggie {
+    25% {
+      background-color: #ffffff;
+      transform: scale(0.5);
+      opacity: 0.3;
+    }
+  }
+  .star10 {
+    position: absolute;
+    left: 580px;
+    top: 350px;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation-name: biggie;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes biggie {
+    25% {
+      background-color: #ffffff;
+      transform: scale(0.4);
+      opacity: 0.8;
+    }
+  }
+  .star11 {
+    position: absolute;
+    left: 1300px;
+    top: 150px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation-name: biggie2;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes biggie2 {
+    25% {
+      background-color: #ffffff;
+      transform: scale(0.7);
+      opacity: 0.8;
+    }
+  }
+}
+
 @media (max-width: 1255px) {
   .blog-header {
     font-size: 30px;
@@ -906,10 +1232,6 @@ a:hover {
     text-align: center;
     align-self: center;
     width: 350px;
-  }
-
-  a {
-    font-size: 15px;
   }
 
   a {
