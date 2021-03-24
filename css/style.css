@@ -99,7 +99,21 @@ p {
     0 0 4px #bda0c7, 0 0 90px #f319bd, 0 0 100px #bda0c7;
   letter-spacing: 10px;
   font-weight: 600;
-  margin: 0 300px 0 0;
+  flex: 1;
+}
+
+#introp {
+  position: relative;
+  color: ivory;
+  font-size: 15px;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  font-weight: 400;
+  font-family: "Orbitron", sans-serif;
+  top: -100px;
+  z-index: 104;
+  line-height: 25px;
+  flex: 2;
 }
 @media (max-width: 1580px) {
   .rocker-man-header {
@@ -114,7 +128,6 @@ p {
     font-size: 40px;
     letter-spacing: 8px;
     font-weight: 600;
-    margin: 0 100px 0 0;
   }
 }
 @media (max-width: 1255px) {
@@ -122,32 +135,47 @@ p {
     font-size: 35px;
     letter-spacing: 8px;
     font-weight: 600;
-    margin: 0 50px 0 0;
   }
 }
 @media (max-width: 1173px) {
+  #introContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    background: rgb(19, 18, 18);
+    border-top: 1px solid #b288c0;
+    border-bottom: 1px solid #b288c0;
+  }
   .rocker-man-header {
     position: relative;
     align-self: center;
+    text-align: center;
+    left: 25px;
     font-size: 35px;
     font-family: "Orbitron", sans-serif;
     color: ivory;
     letter-spacing: 5px;
     font-weight: 600;
-    margin: 0 10px 0 0;
+    flex: none;
   }
-}
-
-#introp {
-  position: relative;
-  color: ivory;
-  font-size: 12px;
-  letter-spacing: 3px;
-  word-spacing: 3px;
-  font-weight: 400;
-  font-family: "Orbitron", sans-serif;
-  top: -100px;
-  z-index: 104;
+  #introp {
+    position: relative;
+    color: ivory;
+    font-size: 15px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-weight: 400;
+    font-family: "Orbitron", sans-serif;
+    z-index: 104;
+    line-height: 25px;
+    top: -200px;
+    flex: none;
+  }
 }
 
 /****************STAR-SECTION***********/
@@ -1194,6 +1222,22 @@ p {
     }
   }
 }
+@media (max-width: 1555px) {
+  .blog-header {
+    font-size: 30px;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    padding: 0 10px;
+  }
+  #introp {
+    font-size: 12px;
+
+    text-align: center;
+    align-self: center;
+    width: 500px;
+    line-height: 15px;
+  }
+}
 
 @media (max-width: 1255px) {
   .blog-header {
@@ -1201,6 +1245,14 @@ p {
     letter-spacing: 5px;
     word-spacing: 3px;
     padding: 0 10px;
+  }
+  #introp {
+    font-size: 12px;
+
+    text-align: center;
+    align-self: center;
+    width: 500px;
+    line-height: 15px;
   }
 }
 
@@ -1219,11 +1271,12 @@ p {
     padding: 0 10px;
   }
   #introp {
-    font-size: 10px;
-    top: -150px;
+    font-size: 12px;
+    top: -230px;
     text-align: center;
     align-self: center;
-    width: 400px;
+    width: 500px;
+    line-height: 15px;
   }
 
   a {
@@ -1231,6 +1284,14 @@ p {
   }
 }
 @media (max-width: 600px) {
+  .author {
+    position: absolute;
+    color: #b288c0;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    margin-top: 210px;
+  }
   .intro-container {
     display: flex;
     flex-direction: column;
@@ -1262,5 +1323,20 @@ p {
     font-size: 12px;
     font-family: "Orbitron", sans-serif;
     z-index: 1;
+  }
+
+  .rocket-h3 {
+    position: relative;
+    color: #b288c0;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 10px;
+    font-weight: 900;
+    padding-right: 20px;
+    top: 102px;
+    z-index: 106;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    z-index: 105;
   }
 }
