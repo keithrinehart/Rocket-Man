@@ -1,6 +1,7 @@
 // DOM Elements
 const rocketBtn = document.getElementById("launch-btn");
 const videoPlayer = document.getElementById("rocketVid");
+const beforeBtn = document.getElementById("rocketH3");
 // Function
 let launch = function () {
   rocket.style.animation = "takeoff 30s linear 9s forwards, none";
@@ -75,9 +76,19 @@ let sizeNormal = function () {
   introp.style.color = "ivory";
   introp.style.transition = "0.3s";
 };
+// Before when width is 1000px
+let before = function () {
+  rocketVid.style.display = "inline";
+  rocketVid.style.width = "300px";
+  rocketVid.style.transition = "0.2s";
+  rocketH3.style.display = "none";
+};
 
 // Rocket BTN Event Listeners
 rocketBtn.addEventListener("click", launch);
 // Video in Header
 videoPlayer.addEventListener("click", grow);
 videoPlayer.addEventListener("dblclick", sizeNormal);
+// Before when width is 1000px
+// Before Event Listener
+beforeBtn.addEventListener("click", before);

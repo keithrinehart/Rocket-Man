@@ -1280,7 +1280,7 @@
 
 .after-h3 {
   position: absolute;
-  top: -60px;
+  top: -75px;
   left: 180px;
   color: #b288c0;
   font-family: "Orbitron", sans-serif;
@@ -1318,6 +1318,7 @@
   font-weight: 900;
   padding-right: 20px;
   z-index: 106;
+  text-decoration: none;
 }
 
 #rocketVid {
@@ -1326,6 +1327,12 @@
   border-radius: 5px;
   box-shadow: 1px 4px 10px 10px rgba(0, 0, 0, 0.15);
   border: 1px solid #b288c0;
+}
+#rocketVid:hover {
+  cursor: pointer;
+  border: 1px solid #e3a3f8;
+  box-shadow: -2px 5px 8px 3px rgba(232, 110, 236, 0.15);
+  transition: 0.3s;
 }
 
 @media (max-width: 3445px) and (min-width: 2482px) {
@@ -1358,5 +1365,118 @@
     border-radius: 5px;
     box-shadow: 1px 4px 10px 10px rgba(0, 0, 0, 0.15);
     border: 1px solid #b288c0;
+  }
+}
+@media (max-width: 1200px) {
+  #rocketVidContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    width: 100vw;
+    bottom: -550px;
+    padding-right: 20px;
+    z-index: 106;
+  }
+
+  .rocket-h3 {
+    position: relative;
+    color: #b288c0;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 10px;
+    font-weight: 900;
+    padding-right: 20px;
+    z-index: 106;
+  }
+
+  #rocketVid {
+    position: relative;
+    z-index: 106;
+    border-radius: 5px;
+    box-shadow: 1px 4px 10px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid #b288c0;
+  }
+
+  .after-h3 {
+    position: absolute;
+    top: -75px;
+    left: 180px;
+    color: #b288c0;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 10px;
+    font-weight: 900;
+    z-index: 106;
+  }
+}
+@media (max-width: 1000px) {
+  #rocketVidContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    width: 100vw;
+    bottom: -550px;
+    padding-right: 20px;
+    z-index: 106;
+  }
+
+  .rocket-h3 {
+    position: relative;
+    color: #b288c0;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 10px;
+    font-weight: 900;
+    padding-right: 20px;
+    top: 102px;
+    z-index: 106;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  #rocketVid {
+    position: relative;
+    z-index: 106;
+    border-radius: 5px;
+    box-shadow: 1px 4px 10px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid #b288c0;
+    display: none;
+  }
+
+  .after-h3 {
+    position: absolute;
+    top: -75px;
+    left: 180px;
+    color: #b288c0;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 10px;
+    font-weight: 900;
+    z-index: 106;
+  }
+}
+
+@media (max-width: 600px) {
+  .after-h3 {
+    position: absolute;
+    top: -75px;
+    left: 180px;
+    color: #b288c0;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 10px;
+    font-weight: 900;
+    z-index: 106;
+  }
+
+  .author {
+    position: absolute;
+    color: #b288c0;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    margin-top: 250px;
   }
 }
