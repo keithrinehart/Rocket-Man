@@ -78,10 +78,9 @@ let sizeNormal = function () {
 };
 // Before when width is 1000px
 let before = function () {
-  rocketVid.style.display = "inline";
-  rocketVid.style.width = "300px";
+  rocketVid.style.animation = "rocketvidsmall 1s linear forwards, none";
+  rocketVid.style.width = "600px";
   rocketVid.style.transition = "0.2s";
-  rocketH3.style.display = "none";
 };
 
 // Rocket BTN Event Listeners
