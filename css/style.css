@@ -61,13 +61,28 @@ p {
   letter-spacing: 8px;
   font-size: 25px;
   font-family: "Orbitron", sans-serif;
+  border: 1px solid #b288c0;
   z-index: 105;
+  transition: 800ms ease;
+  animation: rocketbtn 2s linear infinite forwards;
+}
+
+@keyframes rocketbtn {
+  0% {
+    border: 1px solid #b288c0;
+    transition: 1s ease-in-out;
+  }
+  100% {
+    border: 1px solid #b288c000;
+    transition: 1s ease-in-out;
+  }
 }
 #launch-btn:hover {
   background: #b288c0;
   color: #fff;
+  border-radius: 10px;
   box-shadow: 0 0 10px #f1e3f3, 0 0 40px #f1e3f3, 0 0 80px #f1e3f3;
-  transition: 0.3s;
+  transition: 0.3s ease;
   cursor: pointer;
 }
 
@@ -115,6 +130,7 @@ p {
   line-height: 25px;
   flex: 2;
 }
+
 @media (max-width: 1580px) {
   .rocker-man-header {
     font-size: 55px;
